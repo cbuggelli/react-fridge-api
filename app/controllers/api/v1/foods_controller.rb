@@ -4,6 +4,10 @@ class Api::V1::FoodsController < ApplicationController
     render json: @foods
   end
 
+  def create
+    
+  end
+
   def show
     @food = Food.find_by(id: params[:id])
     render json: @food
