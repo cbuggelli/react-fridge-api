@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20170615194314) do
 
   create_table "foods", force: :cascade do |t|
     t.string "name"
-    t.integer "days_until_expiration"
+    t.string "expiration_date"
     t.string "quantity"
     t.integer "category_id"
     t.datetime "created_at", null: false
