@@ -31,12 +31,10 @@ fishNugs = Food.create(name: "Fish Nuggets", expiration_date: "2018-07-05", cate
 cream = Food.create(name: "Creamsicles", expiration_date: "2020-07-05", category_id: 5, quantity: "2")
 bug = Food.create(name: "Dead Roach", expiration_date: "2057-07-05", category_id: 1, quantity: "1")
 dog = Food.create(name: "Hot Dog Oils", expiration_date: "2017-07-05", category_id: 6, quantity: "10")
-eggplant Food.create(name: "Seductively Shaped Eggplant", expiration_date: "2017-07-05", category_id: 2, quantity: "2")
+eggplant = Food.create(name: "Seductively Shaped Eggplant", expiration_date: "2017-07-05", category_id: 2, quantity: "2")
 spmilk = Food.create(name: "Milk?", expiration_date: "2017-07-05", category_id: 3, quantity: "2")
 brownies = Food.create(name: "Jamies Special Browies", expiration_date: "2017-07-05", category_id: 4, quantity: "6")
 jager = Food.create(name: "Jager Bombs", expiration_date: "2019-02-05", category_id: 6, quantity: "100")
-zuccini = Food.create(name: "Soiled Zucini", expiration_date: "2017-08-05", category_id: 4, quantity: "1")
-rescue ExceptionName
+zuccini = Food.create(name: "Soiled Zuccini", expiration_date: "2017-08-05", category_id: 4, quantity: "1")
 
-end
 puts "seeding foods complete"
