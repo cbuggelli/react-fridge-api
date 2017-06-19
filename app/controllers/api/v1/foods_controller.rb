@@ -21,6 +21,11 @@ class Api::V1::FoodsController < ApplicationController
     render json: food
   end
 
+  def update
+    @food = Food.find_by(id: params[:id])
+    @food = Food.save(student_params)
+  end
+
 
   private
   def student_params
