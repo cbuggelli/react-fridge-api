@@ -11,6 +11,9 @@ meat = Category.create(name: "meat")
 produce = Category.create(name: "produce")
 dairy = Category.create(name: "dairy")
 baked = Category.create(name: "baked")
+freezer = Category.create(name: "freezer")
+beverage = Category.create(name: "beverage")
+other = Category.create(name: "other")
 puts "seeding categories complete"
 
 puts "seeding foods"
