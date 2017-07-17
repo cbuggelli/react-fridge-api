@@ -6,7 +6,7 @@ class Api::V1::FoodsController < ApplicationController
   end
 
   def create
-    food = Food.create(student_params)
+    food = Food.create(food_params)
     render json: food
   end
 
@@ -23,12 +23,12 @@ class Api::V1::FoodsController < ApplicationController
 
   def update
     @food = Food.find_by(id: params[:id])
-    @food = Food.save(student_params)
+    @food = Food.save(food_params)
   end
 
 
   private
-  def student_params
+  def food_params
     params.require(:food).permit(:name, :expiration_date, :quantity, :category_id)
   end
 
