@@ -80,6 +80,12 @@ test:
 #
 production:
   <<: *default
-  database: react-fridge-api_production
-  username: react-fridge-api
-  password: <%= ENV['REACT-FRIDGE-API_DATABASE_PASSWORD'] %>
+  encoding: unicode
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
+  # database: react-fridge-api_production
+  # username: react-fridge-api
+  # password: <%= ENV['REACT-FRIDGE-API_DATABASE_PASSWORD'] %>
