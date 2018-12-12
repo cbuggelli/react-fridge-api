@@ -35,5 +35,6 @@ module ReactFridgeApi
         resource '*', :headers => :any, :methods => [:get, :post, :options, :delete, :patch]
       end
     end
+    config.i18n.fallbacks = [I18n.default_locale]
   end
 end
